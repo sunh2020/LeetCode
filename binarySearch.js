@@ -9,7 +9,9 @@
     let last = nums.length - 1
     
     while (first <= last) {    // while first is less and equal to last
-        let mid = Math.floor(((first + last) / 2))   // middle number is the largest integer value that is less than or equal to a number of (first number + last number) /2
+        let mid = Math.floor(((first + last) / 2))   // middle number is the largest integer value 
+                                                     //that is less than or equal to a number of (first number + last number) /2
+        
         if(nums[mid] < target) {      // if array of mid number is less than target 
             first = mid + 1           // then first number is equal to middle number + 1 (move to right side of middle)
         }
@@ -20,7 +22,7 @@
             return mid   // else, return middle number
         }
         }
-    return -1;           // if not met all, then return -1
+    return -1;           // if not all, then return -1
         
  };
 
