@@ -21,5 +21,4 @@
     return start                                              // if not met all, return start number   
 };
 
-
-console.log(searchInsert([1,3,5,6],5));
+console.log(searchInsert([1,3,5,6],2));
